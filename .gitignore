@@ -1,0 +1,11 @@
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore specific environment variable files if necessary
+# Uncomment the following lines if you want to ignore .env files
+.env
+.env.*
+
+#Ignore .terraform directory
+.terraform/
