@@ -6,6 +6,15 @@ sudo yum update -y
 # Install necessary tools
 sudo yum install -y unzip curl wget
 
+# Install EPEL repository
+sudo yum install epel-release -y
+
+# Install Git LFS
+sudo yum install git-lfs -y
+
+# Initialize Git LFS
+git lfs install
+
 # Install Terraform
 TERRAFORM_VERSION="1.5.6"
 echo "Installing Terraform v$TERRAFORM_VERSION..."
@@ -28,4 +37,4 @@ rm -rf $AWS_CLI_ZIP aws/
 # Verify AWS CLI Installation
 aws --version
 
-echo "Terraform and AWS CLI v2 installation completed successfully."
+echo "Terraform, Git LFS, and AWS CLI v2 installation completed successfully."
